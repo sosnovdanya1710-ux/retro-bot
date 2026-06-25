@@ -20,7 +20,7 @@ def home():
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = InlineKeyboardMarkup()
-    btn = InlineKeyboardButton(text='Открыть профиль', web_app=WebAppInfo(url='https://sosnovdanya1710-ux.github.io/банан/'))
+    btn = InlineKeyboardButton(text='Открыть профиль', web_app=WebAppInfo(url='[https://sosnovdanya1710-ux.github.io/банан/](https://sosnovdanya1710-ux.github.io/банан/)'))
     markup.add(btn)
     bot.send_message(message.chat.id, "Привет! Кнопка ниже:", reply_markup=markup)
 
